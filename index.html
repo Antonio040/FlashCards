@@ -28,7 +28,13 @@
         h1 {
             text-align: center;
             color: var(--accent-color);
-            margin-bottom: 40px;
+            margin-bottom: 20px;
+        }
+
+        .counter {
+            margin-bottom: 20px;
+            font-size: 1rem;
+            color: var(--text-color);
         }
 
         .card {
@@ -64,6 +70,7 @@
             background-color: var(--card-color);
             border: 1px solid var(--border-color);
             border-radius: 12px;
+            text-align: center;
         }
 
         .back {
@@ -88,6 +95,7 @@
 </head>
 <body>
 <h1>Marketing Flashcards</h1>
+<div class="counter" id="counter"></div>
 <div class="card" id="card">
     <div class="card-inner" id="card-inner">
         <div class="card-face front" id="question"></div>
@@ -100,7 +108,7 @@
 </div>
 
 <script>
-    const flashcards = [
+    let flashcards =[
         ["What are the 4 Ps of marketing?", "Product, Price, Place, Promotion"],
         ["What is a USP (Unique Selling Proposition)?", "A feature or benefit that makes a product unique and better than the competition."],
         ["What are the types of product benefits?", "Core benefit, Added benefit, Hedonic benefit, Prestige benefit"],
@@ -130,20 +138,57 @@
         ["What is paid media?", "Advertising through paid channels like Google Ads, TV ads, sponsored posts."],
         ["What is earned media?", "Publicity gained through word-of-mouth, reviews, or press coverage."],
         ["What is owned media?", "Content you control, like your website, blog, and email newsletters."],
-        ["How does digital marketing build authority?", "By consistently sharing high-quality, optimized content that builds trust."]
+        ["How does digital marketing build authority?", "By consistently sharing high-quality, optimized content that builds trust."],
+        ["What is the difference between B2B and B2C marketing?", "B2B targets businesses; B2C targets individual consumers."],
+        ["What is a brand?", "A name, symbol, or design that identifies and differentiates a product."],
+        ["Why is market research important?", "It helps understand customer needs and reduce risk in decision-making."],
+        ["What is customer lifetime value (CLV)?", "The total value a customer brings to a business over their lifetime."],
+        ["What is churn rate?", "The rate at which customers stop doing business with a company."],
+        ["What is a marketing funnel?", "A model showing the customer journey from awareness to purchase."],
+        ["What is influencer marketing?", "Using influential people to promote a product or brand."],
+        ["What is co-branding?", "When two brands collaborate to create a joint product."],
+        ["What is retargeting in digital marketing?", "Showing ads to people who previously interacted with your website or app."],
+        ["What is SEO?", "Search Engine Optimization – improving a website to rank higher on search engines."],
+        ["What is a landing page?", "A standalone web page designed for a marketing campaign."],
+        ["What is A/B testing?", "Comparing two versions of a webpage or ad to see which performs better."],
+        ["What is a call to action (CTA)?", "A prompt that encourages users to take a specific action."],
+        ["What are KPIs?", "Key Performance Indicators – metrics used to evaluate success."],
+        ["What is customer segmentation?", "Dividing customers into groups based on characteristics or behavior."],
+        ["What is word-of-mouth marketing?", "Promotion via customer recommendations, often organic."],
+        ["What is positioning in marketing?", "Creating a specific image of a brand in consumers’ minds."],
+        ["What is the difference between needs and wants?", "Needs are essential; wants are desires shaped by culture and personality."],
+        ["What is brand equity?", "The value added to a product because of its brand name."],
+        ["What is penetration pricing?", "Setting a low price to enter a competitive market quickly."],
+        ["What is upselling?", "Encouraging customers to buy a more expensive version of a product."],
+        ["What is cross-selling?", "Selling related or complementary products to a customer."],
+        ["What is guerrilla marketing?", "Unconventional marketing tactics to get maximum results with minimal resources."],
+        ["What is niche marketing?", "Targeting a very specific segment of the market."],
+        ["What is event marketing?", "Promoting a brand or product through real-time events."],
+        ["What is CRM?", "Customer Relationship Management – strategies for managing interactions with customers."],
+        ["What is multichannel marketing?", "Using multiple platforms (online, retail, etc.) to reach customers."],
+        ["What is omnichannel marketing?", "Providing a seamless customer experience across all channels."],
+        ["What is viral marketing?", "Encouraging content to spread quickly and widely online."],
+        ["What is brand loyalty?", "When customers consistently prefer and purchase the same brand."]
     ];
+    // Shuffle flashcards
+    for (let i = flashcards.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [flashcards[i], flashcards[j]] = [flashcards[j], flashcards[i]];
+    }
 
     let index = 0;
     const card = document.getElementById("card");
     const cardInner = document.getElementById("card-inner");
     const question = document.getElementById("question");
     const answer = document.getElementById("answer");
+    const counter = document.getElementById("counter");
     const prevBtn = document.getElementById("prev");
     const nextBtn = document.getElementById("next");
 
     function updateFlashcard() {
         question.textContent = flashcards[index][0];
         answer.textContent = flashcards[index][1];
+        counter.textContent = `Card ${index + 1} of ${flashcards.length}`;
         card.classList.remove("flipped");
     }
 
