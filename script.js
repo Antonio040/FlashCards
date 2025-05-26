@@ -12,7 +12,7 @@ let flashcards = [
     ["Name main causes of the French Revolution (1789).", "Main causes included social inequality (Estates system), financial crisis due to debt and lavish spending, food shortages, and the spread of Enlightenment ideas calling for change."],
     ["What links the French Revolution to human rights?", "The revolution produced the Declaration of the Rights of Man and Citizen (1789), proclaiming freedoms like equality, liberty, and resistance to oppression."],
     ["Briefly outline the course of the French Revolution.", "It began with the Estates-General and creation of the National Assembly. The storming of the Bastille followed, leading to the Declaration of Rights and major reforms against monarchy and privilege."],
-    ["Describe what the American Revolution or the American War of Independence (1776) was about.", "It was a conflict between the 13 American colonies and Britain over taxation and lack of representation. Colonists declared independence, fought a war, and established the United States."]
+    ["Describe the terms Renaissance and Humanism.", "The Renaissance(= rebirth) was a cultural movement in Europe (14th-17th centuries)art, science, and classical learning. Humanism = focus on human potential, improve through knowledge/education. Not relying only on church",]
 ];
 /*let flashcards = [
     ["What are the 4 Ps of marketing?", "Product, Price, Place, Promotion"],
@@ -60,7 +60,7 @@ let flashcards = [
     ["What are the main goals of marketing?", "Attract, convert, and retain customers profitably."],
     ["What is B2B segmentation based on?", "Industry, company size, location, usage, or decision-making style."],
     ["What is B2C segmentation based on?", "Demographics, lifestyle, buying behavior, etc."],
-    ["Why avoid general surveys for niche markets?", "They dilute results and miss the focused target group."],
+    ["Why awavoid general surveys for niche markets?", "They dilute results and miss the focused target group."],
     ["Why use heat maps in retail?", "To visualize where customers spend the most time."],
     ["How does price transparency affect businesses?", "It increases competition and makes price undercutting easier."],
     ["How can you reduce price comparability?", "Use bundles, unique models, added value, or subscriptions."],
