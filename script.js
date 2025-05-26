@@ -1,4 +1,20 @@
 let flashcards = [
+    ["Name reasons for the long existence of the Roman Empire", "Strong army – they were well trained and disciplined; Organized administration – efficient bureaucracy and infrastructure; Integration of conquered peoples – offering citizenship and local autonomy; Adaptable politics and religion – incorporated gods and local customs; Shared language and culture – Latin and Roman identity; Division into East and West – improved manageability."],
+    ["How far did the expansion of the Roman Empire reach?", "It stretched across Europe, North Africa, and parts of Asia – including Spain, France (Gaul), Italy, Greece, Great Britain, Turkey, Syria, and Egypt. The Mediterranean Sea was referred to as 'Mare Nostrum' (Our Sea) by the Romans."],
+    ["What is a Greek polis? Why were the poleis independently governed and not centralized?", "A polis is a city-state with its own government, laws, and army. The mountainous geography of Greece made travel and communication difficult, leading to the development of many independent poleis instead of a centralized state."],
+    ["How does ancient democracy differ from today’s democracy?", "Ancient Athenian democracy allowed only free adult men to vote, excluding women, slaves, and foreigners. Today’s democracy includes broader suffrage with equal rights for all adult citizens regardless of gender or status."],
+    ["Explain which aspects of our modern life are connected to those of ancient Greece.", "Many ideas come from Greece: democracy (citizen participation), philosophy (Socrates, Plato), science (early discoveries), art and architecture (columns, symmetry), theater (drama and comedy), and literature (epic poems and myths)."],
+    ["Explain what absolutism is and name its core principles.", "Absolutism is a form of monarchy where the ruler holds all power. Core principles include: sole rule by the monarch, divine right (authority from God), centralized power, a professional standing army, and economic control through mercantilism."],
+    ["What did the Enlightenment criticize about absolutism?", "The Enlightenment opposed the lack of freedom, the concentration of power, arbitrary rule, and divine right of kings. It supported ideas like individual rights, rational thinking, freedom of speech, and separation of powers."],
+    ["What does Immanuel Kant mean by ‘Enlightenment is the emergence of man from his self-imposed immaturity’?", "Kant means people should use their own reason instead of blindly following authority. Immaturity is relying on others for guidance rather than thinking independently."],
+    ["When did the Enlightenment take place?", "It mainly occurred in the 17th and 18th centuries, especially the 18th century, also known as the Age of Reason, when intellectuals promoted logic, science, and individual liberty."],
+    ["What were the consequences of the Enlightenment?", "It influenced revolutions (French, American), led to the creation of constitutions, promoted human rights, the separation of powers, and encouraged rational thought in politics and society."],
+    ["Name main causes of the French Revolution (1789).", "Main causes included social inequality (Estates system), financial crisis due to debt and lavish spending, food shortages, and the spread of Enlightenment ideas calling for change."],
+    ["What links the French Revolution to human rights?", "The revolution produced the Declaration of the Rights of Man and Citizen (1789), proclaiming freedoms like equality, liberty, and resistance to oppression."],
+    ["Briefly outline the course of the French Revolution.", "It began with the Estates-General and creation of the National Assembly. The storming of the Bastille followed, leading to the Declaration of Rights and major reforms against monarchy and privilege."],
+    ["Describe what the American Revolution or the American War of Independence (1776) was about.", "It was a conflict between the 13 American colonies and Britain over taxation and lack of representation. Colonists declared independence, fought a war, and established the United States."]
+];
+/*let flashcards = [
     ["What are the 4 Ps of marketing?", "Product, Price, Place, Promotion"],
     ["What is a USP (Unique Selling Proposition)?", "A feature or benefit that makes a product unique and better than the competition."],
     ["What is a core product benefit?", "The basic value or problem-solving benefit that the customer is really buying."],
@@ -54,7 +70,7 @@ let flashcards = [
     ["What is a product line extension?", "Adding new variations to an existing product range."],
     ["What does it mean to trade up?", "Introducing a more premium version of a product."],
     ["What does it mean to trade down?", "Introducing a more affordable version to reach new segments."]
-];
+];*/
 
 // Shuffle flashcards
 for (let i = flashcards.length - 1; i > 0; i--) {
