@@ -1,3 +1,2 @@
-# MarketingFlashCards
-## A website with questions about marketing for your business exam!
-This Website will be made private after the test.
+# FlashCards
+This website will be used to put questions and answeres to the next tests we are gonna have in the different subjects.
