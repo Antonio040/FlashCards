@@ -89,6 +89,11 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
     width: 6.5rem;
+    transition: transform 10s;
+}
+
+.nav-buttons button:hover {
+    transform: rotate(360deg); /* Spin the button */
 }
 
 #tutorial{
