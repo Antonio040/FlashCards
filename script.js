@@ -12,7 +12,10 @@ let flashcards = [
     ["Name main causes of the French Revolution (1789).", "Main causes included social inequality (Estates system), financial crisis due to debt and lavish spending, food shortages, and the spread of Enlightenment ideas calling for change."],
     ["What links the French Revolution to human rights?", "The revolution produced the Declaration of the Rights of Man and Citizen (1789), proclaiming freedoms like equality, liberty, and resistance to oppression."],
     ["Briefly outline the course of the French Revolution.", "It began with the Estates-General and creation of the National Assembly. The storming of the Bastille followed, leading to the Declaration of Rights and major reforms against monarchy and privilege."],
-    ["Describe the terms Renaissance and Humanism.", "The Renaissance(= rebirth) was a cultural movement in Europe (14th-17th centuries)art, science, and classical learning. Humanism = focus on human potential, improve through knowledge/education. Not relying only on church",]
+    ["Describe the terms Renaissance and Humanism.", "The Renaissance(= rebirth) was a cultural movement in Europe (14th-17th centuries)art, science, and classical learning. Humanism = focus on human potential, improve through knowledge/education. Not relying only on church"],
+    ["Examine the relationship between the American War of Independence and the emergence of modern democracy.", "The constitution established a democratic government with checks and balances, protecting individual rights. It inspired other democracies worldwide. based in enlightenment"],
+    ["Describe american revolution", "British colonists invaded america and started living there, but they still had to pay taxes to Britain even though they didnt have a say in the parliament. They did revolution and got basic rights so was America created."],
+
 ];
 /*let flashcards = [
     ["What are the 4 Ps of marketing?", "Product, Price, Place, Promotion"],
@@ -92,6 +95,29 @@ function updateFlashcard() {
     answer.textContent = flashcards[index][1];
     counter.textContent = `${index + 1} of ${flashcards.length}`;
     card.classList.remove("flipped");
+
+
+    // Disable/enable prev button
+    if (index === 0) {
+        prevBtn.disabled = true;
+        prevBtn.style.color = "gray";
+        prevBtn.style.cursor = "not-allowed";
+    } else {
+        prevBtn.disabled = false;
+        prevBtn.style.color = "";
+        prevBtn.style.cursor = "";
+    }
+
+    // Disable/enable next button
+    if (index === flashcards.length - 1) {
+        nextBtn.disabled = true;
+        nextBtn.style.color = "gray";
+        nextBtn.style.cursor = "not-allowed";
+    } else {
+        nextBtn.disabled = false;
+        nextBtn.style.color = "";
+        nextBtn.style.cursor = "";
+    }
 }
 
 card.addEventListener("click", () => {
