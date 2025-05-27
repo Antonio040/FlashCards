@@ -94,7 +94,7 @@ h1 {
 #tutorial{
     font-size: 1rem;
     position: fixed;
-    margin-top: 15rem;
+    margin-top: 10rem;
     transform: translateX(-50%);
     background-color: var(--accent-color);
     color: var(--text-color);
