@@ -88,16 +88,3 @@ h1 {
 .nav-buttons button:hover {
     transform: rotate(360deg);
 }
-
-#tutorial {
-    font-size: 1rem;
-    position: fixed;
-    margin-top: 10rem;
-    transform: translateX(-50%);
-    background-color: var(--accent-color);
-    color: var(--text-color);
-    padding: 10px 20px;
-    border-radius: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-}
