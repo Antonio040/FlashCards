@@ -1,39 +1,38 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const downloadButton = document.getElementById('downloadBtn');
-    const urlInput = document.getElementById('videoUrl');
+    const downloadBtn = document.getElementById('downloadBtn');
 
-    downloadButton.addEventListener('click', async () => {
-        const videoUrl = urlInput.value.trim();
+    downloadBtn.addEventListener('click', async () => {
+        const url = document.getElementById('videoUrl').value.trim();
 
-        if (!videoUrl) {
-            alert("Please enter a video URL.");
+        if (!url) {
+            alert('Please enter a YouTube URL.');
             return;
         }
 
         try {
-            const response = await fetch(`http://localhost:3000/download`, {
+            const response = await fetch('http://localhost:3000/download', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ url: videoUrl })
+                body: JSON.stringify({ url })
             });
 
-            if (response.ok) {
-            } else {
-                new Error('Download failed.');
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(errorData.error || 'Failed to download');
             }
 
             const blob = await response.blob();
-            const downloadLink = document.createElement('a');
-            downloadLink.href = URL.createObjectURL(blob);
-            downloadLink.download = 'video.mp4';
-            document.body.appendChild(downloadLink);
-            downloadLink.click();
-            document.body.removeChild(downloadLink);
-        } catch (error) {
-            console.error(error);
-            alert("Failed to download the video. Check the URL or try again later.");
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'video.mp4';
+            document.body.appendChild(link);
+            link.click();
+            link.remove();
+        } catch (err) {
+            console.error(err);
+            alert(`Download failed: ${err.message}`);
         }
     });
 });

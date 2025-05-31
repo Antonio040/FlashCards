@@ -34,11 +34,19 @@
 <div class="container mt-5">
     <h1>Video Downloader</h1>
     <p>Enter a video URL for learning to download it!</p>
+
     <div class="button-container d-flex flex-column flex-md-row align-items-center gap-3">
-        <label for="videoUrl"></label><input id="videoUrl" type="text" class="form-control" placeholder="Enter YouTube URL">
+        <label for="videoUrl" class="form-label visually-hidden">Video URL</label>
+        <input
+                id="videoUrl"
+                type="text"
+                class="form-control"
+                placeholder="Enter YouTube URL"
+        />
         <button id="downloadBtn" class="btn btn-primary">Download</button>
     </div>
 </div>
+
 
 </body>
 </html>
