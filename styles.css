@@ -7,6 +7,7 @@
 }
 
 .nav-item{
+    font-family: var(--font-primary);
     font-size: 1.2rem !important;
     color: var(--text-color);
 }
