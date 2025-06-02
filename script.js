@@ -63,7 +63,7 @@ let flashcards = [
     ["What are the main goals of marketing?", "Attract, convert, and retain customers profitably."],
     ["What is B2B segmentation based on?", "Industry, company size, location, usage, or decision-making style."],
     ["What is B2C segmentation based on?", "Demographics, lifestyle, buying behavior, etc."],
-    ["Why awavoid general surveys for niche markets?", "They dilute results and miss the focused target group."],
+    ["Why avoid general surveys for niche markets?", "They dilute results and miss the focused target group."],
     ["Why use heat maps in retail?", "To visualize where customers spend the most time."],
     ["How does price transparency affect businesses?", "It increases competition and makes price undercutting easier."],
     ["How can you reduce price comparability?", "Use bundles, unique models, added value, or subscriptions."],
