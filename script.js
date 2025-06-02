@@ -1,4 +1,4 @@
-let flashcards = [
+/*let flashcards = [
     ["Name reasons for the long existence of the Roman Empire", "Strong army – they were well trained and disciplined; Organized administration – efficient bureaucracy and infrastructure; Integration of conquered peoples – offering citizenship and local autonomy; Adaptable politics and religion – incorporated gods and local customs; Shared language and culture – Latin and Roman identity; Division into East and West – improved manageability."],
     ["How far did the expansion of the Roman Empire reach?", "It stretched across Europe, North Africa, and parts of Asia – including Spain, France (Gaul), Italy, Greece, Great Britain, Turkey, Syria, and Egypt. The Mediterranean Sea was referred to as 'Mare Nostrum' (Our Sea) by the Romans."],
     ["What is a Greek polis? Why were the poleis independently governed and not centralized?", "A polis is a city-state with its own government, laws, and army. The mountainous geography of Greece made travel and communication difficult, leading to the development of many independent poleis instead of a centralized state."],
@@ -16,8 +16,8 @@ let flashcards = [
     ["Examine the relationship between the American War of Independence and the emergence of modern democracy.", "The constitution established a democratic government with checks and balances, protecting individual rights. It inspired other democracies worldwide. based in enlightenment"],
     ["Describe american revolution", "British colonists invaded america and started living there, but they still had to pay taxes to Britain even though they didnt have a say in the parliament. They did revolution and got basic rights so was America created."],
 
-];
-/*let flashcards = [
+];*/
+let flashcards = [
     ["What are the 4 Ps of marketing?", "Product, Price, Place, Promotion"],
     ["What is a USP (Unique Selling Proposition)?", "A feature or benefit that makes a product unique and better than the competition."],
     ["What is a core product benefit?", "The basic value or problem-solving benefit that the customer is really buying."],
@@ -73,7 +73,7 @@ let flashcards = [
     ["What is a product line extension?", "Adding new variations to an existing product range."],
     ["What does it mean to trade up?", "Introducing a more premium version of a product."],
     ["What does it mean to trade down?", "Introducing a more affordable version to reach new segments."]
-];*/
+];
 
 // Shuffle flashcards
 for (let i = flashcards.length - 1; i > 0; i--) {
