@@ -1,0 +1,37 @@
+.flashcard-container {
+    display: flex;
+    flex-direction: row; /* Ensure items are in a row */
+    justify-content: flex-start; /* Align items to the start of the container */
+    align-items: center; /* Vertically align items in the center */
+    margin: 2rem;
+}
+
+.home-container {
+    padding: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color) !important;
+    width: min(35rem, 50rem);
+    border-radius: 2rem;
+    margin-right: 2rem; /* Add spacing between the boxes */
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 40rem;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flashcard.container {
+    display: flex;
+}
