@@ -7,13 +7,13 @@
 }
 
 .home-container {
-    padding: 3.5rem;
+    padding: 3rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     background-color: var(--accent-color) !important;
-    width: min(35rem, 50rem);
+    width: min(30rem, 50rem);
     border-radius: 2rem;
     margin-right: 2rem; /* Add spacing between the boxes */
 }
