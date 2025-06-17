@@ -40,6 +40,10 @@ h1 {
     transition: transform 0.6s;
 }
 
+.flipped .flashcard-inner {
+    transform: rotateY(180deg);
+}
+
 .flashcard-face {
     position: absolute;
     width: 100%;
