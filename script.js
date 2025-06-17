@@ -140,13 +140,6 @@ const flashcards = [
     ["What is the purpose of the `lstat` system call?", "The `lstat` system call is used to read a file's attributes. "],
     ["Name some elements from the `stat` structure that `lstat` populates.", "Some elements from the `stat` structure populated by `lstat` include `st_nlink` (number of hard links), `st_uid` (user ID of owner), `st_gid` (group ID of owner), `st_size` (file size in bytes), `st_blocks` (number of blocks allocated), and `st_mtime` (last modification time). "],
     ["How can you check if a file is a directory using `lstat`?", "You can check if a file is a directory using the `S_ISDIR` macro with the `st_mode` field of the `stat` structure. If `S_ISDIR(attributes.st_mode)` returns non-zero, the file is a directory. "],
-    ["How can you check if a file is readable by the user using `lstat`?", "You can check if a file is readable by the user by performing a bitwise AND operation between `attributes.st_mode` and the `S_IRUSR` flag. If the result is non-zero, the file is readable by the user. "],
-    ["What is the distinction between ANSI C library functions and POSIX system calls for file operations?", "ANSI C library functions are available in any ANSI compatible C environment, while POSIX system calls are available on POSIX compliant systems. POSIX calls are system-specific and might not be portable to other systems (e.g., partly not to Windows), but they are direct OS calls and can perform more OS-specific tasks. "],
-    ["Provide an example of a POSIX file operation for creating a file.", "A POSIX file operation for creating a file is `fd = open(path, O_CREAT | O_TRUNC | O_WRONLY, mode)`, where `mode` comes from the `chmod` system call. "],
-    ["How do you perform a read operation using POSIX calls?", "To perform a read operation using POSIX calls, you use `b_read = read(fd, &buf, n_bytes)`, where `fd` is the file descriptor, `&buf` is the buffer to read into, and `n_bytes` is the number of bytes to read. "],
-    ["What POSIX call is used to delete a file?", "The POSIX call used to delete a file is `s = unlink(path)`. "],
-    ["What POSIX call is used to create a directory?", "The POSIX call used to create a directory is `s = mkdir(path, mode)`. "],
-    ["How do you open a directory using POSIX operations?", "You open a directory using `dir = opendir(path)`, where `dir` is a pointer to a directory stream or `NULL` if the operation fails. "],
     ["What is the difference between `link` and `symlink`?", "`link` creates a **hard link** to a file, while `symlink` creates a **symbolic link** (or soft link) to a file. "]
 ];
 
